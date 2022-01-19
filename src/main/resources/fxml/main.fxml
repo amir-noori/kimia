@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.stage.Screen?>
+<VBox stylesheets="/css/main.css" styleClass="main-pane, app-container" id="main-grid-pane" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="30" prefWidth="1092.0"
+      xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+      fx:controller="ir.kimia.client.controller.MainController">
+    <fx:define>
+        <Screen fx:factory="getPrimary" fx:id="screen"/>
+    </fx:define>
+    <VBox prefHeight="30" prefWidth="4000" alignment="BASELINE_RIGHT" style="-fx-alignment: top-right;"
+          xmlns:fx="http://javafx.com/fxml">
+        <HBox>
+            <MenuBar prefWidth="${screen.visualBounds.width*0.20}"
+                     style="-fx-alignment: top-left; -fx-background-color: #000116">
+                <menus>
+                    <Menu fx:id="logoutMenu" style="-fx-alignment: top-left;"/>
+                    <Menu fx:id="switchOfficeMenu" style="-fx-alignment: top-left;"/>
+                </menus>
+            </MenuBar>
+
+            <MenuBar prefWidth="${screen.visualBounds.width*0.80}" fx:id="menuBar"
+                     style="-fx-alignment: top-right; -fx-background-color: #000116">
+                <menus>
+                    <Menu style="-fx-alignment: top-left;" onAction="#onMenuItemClick" text="%admin">
+                        <items>
+                            <MenuItem id="userManagement" text="%user.management"/>
+                        </items>
+                    </Menu>
+                    <Menu onAction="#onMenuItemClick" text="%reports">
+                        <items>
+                            <MenuItem id="partyAccountBalanceReport" text="%party.account.balance.report"/>
+                        </items>
+                    </Menu>
+                    <Menu onAction="#onMenuItemClick" text="%stock">
+                        <items>
+                            <MenuItem id="stock" text="%view.stock"/>
+                        </items>
+                    </Menu>
+                    <Menu onAction="#onMenuItemClick" text="%invoice">
+                        <items>
+                            <MenuItem id="invoice" text="%record.invoice.menu"/>
+                        </items>
+                    </Menu>
+                    <Menu onAction="#onMenuItemClick" text="%account">
+                        <items>
+                            <MenuItem id="partyManagement" text="%register.account"/>
+                        </items>
+                    </Menu>
+                    <Menu text="%product" onAction="#onMenuItemClick">
+                        <items>
+                            <MenuItem id="productCategoryManagement" text="%product.category"/>
+                            <MenuItem id="productManagement" text="%product"/>
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+        </HBox>
+    </VBox>
+
+    <SplitPane prefWidth="20" maxHeight="Infinity" prefHeight="${screen.visualBounds.height*0.95}"
+               style="-fx-background-color: rgba(100, 100, 100, 0.2);">
+        <AnchorPane prefWidth="${screen.visualBounds.width*0.15}" maxWidth="${screen.visualBounds.width*0.15}"
+                    prefHeight="${screen.visualBounds.height*0.95}"
+                    style="-fx-background-color: rgba(100, 100, 100, 0.5);">
+            <Accordion prefWidth="${screen.visualBounds.width*0.15}" maxWidth="${screen.visualBounds.width*0.15}">
+                <panes>
+                    <TitledPane VBox.vgrow="ALWAYS" animated="false" text="%gold">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                    </TitledPane>
+                    <TitledPane VBox.vgrow="ALWAYS" animated="false" text="%product">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                    </TitledPane>
+                    <TitledPane VBox.vgrow="ALWAYS" animated="false" text="%product.category">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                    </TitledPane>
+                </panes>
+            </Accordion>
+        </AnchorPane>
+    </SplitPane>
+</VBox>
+

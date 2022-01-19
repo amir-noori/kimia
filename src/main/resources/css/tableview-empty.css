@@ -1,0 +1,19 @@
+
+
+/*
+    CSS rules for tableviews that should only show rows with actual values.
+ */
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+    -fx-background-image: none;
+}
+
+.list-cell:empty {
+    -fx-background-color: white;
+    -fx-background-image: none;
+}

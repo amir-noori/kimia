@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.stage.Screen?>
+<VBox fx:id="stockMainBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="793.0"
+      fx:controller="ir.kimia.client.controller.StockController"
+      xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:define>
+        <Screen fx:factory="getPrimary" fx:id="screen"/>
+    </fx:define>
+   <children>
+      <TabPane fx:id="stockTabPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="791.0"  prefWidth="${screen.visualBounds.width}" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="%view.stock">
+            <content>
+                <fx:include id="stockView" fx:id="stockView" prefWidth="${stockMainBox.width*0.98}" source="stockView.fxml" />
+            </content>
+          </Tab>
+          <Tab text="%product.stock">
+            <content>
+                <fx:include id="productStockView" fx:id="productStockView" prefWidth="${stockMainBox.width*0.98}" source="productStockView.fxml" />
+            </content>
+          </Tab>
+
+        <Tab text="%office.cheques">
+            <content>
+                <fx:include id="chequeStockView" fx:id="chequeStockView" prefWidth="${stockMainBox.width*0.98}" source="chequeStockView.fxml" />
+            </content>
+        </Tab>
+
+        <Tab text="%stock.status">
+            <content>
+                <fx:include id="overallStockView" fx:id="overallStockView" prefWidth="${stockMainBox.width*0.98}" source="overallStockView.fxml" />
+            </content>
+        </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

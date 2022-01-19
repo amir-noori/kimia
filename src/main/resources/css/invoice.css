@@ -1,0 +1,20 @@
+.table-view .column-header .label {
+    -fx-font-size: 10px;
+}
+
+.app-container {
+    /*-fx-background-color: #5fc3d6;*/
+    -fx-background-image: url("../images/saint_malo.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+.invoice-help-btn {
+    -fx-background-color: #c3c4c4,
+    linear-gradient(#d6d6d6 50%, white 100%),
+    radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0, 1, 1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'B Titr Bold';
+    src: url('/font/B_Titr_Bold.ttf');
+}
+
+.menu .label {
+    -fx-text-fill: #b7b7b7;
+    -fx-font-family: 'B Titr Bold' !important;
+}
+
+.main-pane {
+    -fx-background-image: url("../images/background_image_blue.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, #2b2b2b, 30, 0.5, 0, 0);
+    -fx-font-family: 'B Titr Bold' !important;
+    -fx-background-color: #101010;
+}
+
+Label {
+    -fx-text-fill: #e0e0e0 !important;
+    -fx-font-size: 20;
+    -fx-font-family: 'B Titr Bold' !important;
+}
+
+.main-pane {
+    -fx-font-size: 20;
+    -fx-font-family: 'B Titr Bold' !important;
+}
+
+#kimia-table .table-cell {
+    -fx-alignment: CENTER-RIGHT;
+    /* The rest is from caspian.css */
+
+    -fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";
+    -fx-padding: 0.166667em; /* 2px, plus border adds 1px */
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent -fx-table-cell-border-color transparent transparent;
+    -fx-border-width: 0.083333em; /* 1 */
+    -fx-cell-size: 2.0em; /* 24 */
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.app-container {
+    -fx-background-color: blue;
+}
+
+.app-container {
+    /*-fx-background-color: #5fc3d6;*/
+    -fx-background-image: url("../images/saint_malo.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+
+}

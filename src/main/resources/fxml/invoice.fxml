@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.stage.Screen?>
+<VBox fx:id="containerVBox" styleClass="app-container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="889.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ir.kimia.client.controller.InvoiceController">
+    <fx:define>
+        <Screen fx:factory="getPrimary" fx:id="screen"/>
+    </fx:define>
+    <children>
+      <Pane fx:id="inputParentPane" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="1295.0">
+         <children>
+            <Pane fx:id="inputPane" layoutX="${(inputParentPane.width - inputPane.width)/2}" layoutY="9.0" prefHeight="60.0" prefWidth="1398.0" style="-fx-border-color: ccc; -fx-border-radius: 5;">
+               <children>
+                  <GridPane layoutX="104.0" layoutY="26.0" prefHeight="15.0" prefWidth="1246.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="90.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="71.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="90.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="71.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="106.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="101.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="106.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="101.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="150.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="263.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="%document.number" />
+                        <Label text="%invoice.number" GridPane.columnIndex="2" />
+                        <Label text="%date" GridPane.columnIndex="4" />
+                        <Label text="%party.code" GridPane.columnIndex="6" />
+                        <Label text="%party.name" GridPane.columnIndex="8" />
+                        <TextField fx:id="documentNumberInput" prefHeight="25.0" prefWidth="75.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="invoiceNumberInput" GridPane.columnIndex="3" />
+                        <TextField fx:id="invoiceDateInput" promptText="1401/07/22" GridPane.columnIndex="5" />
+                        <TextField fx:id="partyCodeInput" GridPane.columnIndex="7" />
+                        <ComboBox fx:id="partyNameComboBox" editable="true" prefWidth="250" GridPane.columnIndex="9" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="invoiceMainPane" nodeOrientation="RIGHT_TO_LEFT" prefHeight="${containerVBox.height*0.8}" prefWidth="${containerVBox.width*0.95}">
+         <children>
+            <TableView fx:id="invoiceTable" layoutX="137.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="${invoiceMainPane.height*0.55}" prefWidth="${invoiceMainPane.width*0.89}">
+              <columns>
+              </columns>
+            </TableView>
+
+             <GridPane fx:id="invoiceTableFooter" layoutX="${invoiceTable.layoutX}" layoutY="${invoiceTable.layoutY + invoiceTable.height + 3}"
+                       nodeOrientation="RIGHT_TO_LEFT" prefHeight="35" prefWidth="${invoiceTable.width}" style="-fx-border-color: ccc;">
+                 <children>
+                     <Label GridPane.columnIndex="0" alignment="CENTER" text="%regard.percent" prefHeight="${invoiceTableFooter.height}" style="-fx-border-color: ccc; -fx-padding: 0 10 0 10;" />
+                     <TextField fx:id="regardPercentInput" GridPane.columnIndex="1" editable="false" alignment="CENTER" prefHeight="${invoiceTableFooter.height}" />
+
+                     <Label GridPane.columnIndex="2" alignment="CENTER" text="%stone" prefHeight="${invoiceTableFooter.height}" style="-fx-border-color: ccc; -fx-padding: 0 10 0 10;" />
+                     <TextField fx:id="invoiceStonesInput" GridPane.columnIndex="3" editable="false" alignment="CENTER" prefHeight="${invoiceTableFooter.height}" />
+
+                     <Label GridPane.columnIndex="4" alignment="CENTER" text="%difference" prefHeight="${invoiceTableFooter.height}" style="-fx-border-color: ccc; -fx-padding: 0 10 0 10;" />
+                     <TextField fx:id="differenceInput" GridPane.columnIndex="5" editable="false" alignment="CENTER" prefHeight="${invoiceTableFooter.height}" />
+
+                     <Label GridPane.columnIndex="6" alignment="CENTER" text="%discount" prefHeight="${invoiceTableFooter.height}" style="-fx-border-color: ccc; -fx-padding: 0 10 0 10;" />
+                     <TextField fx:id="discountInput" GridPane.columnIndex="7" editable="true" alignment="CENTER" prefHeight="${invoiceTableFooter.height}" />
+
+                 </children>
+             </GridPane>
+
+            <GridPane fx:id="previousBalanceGridPane" layoutX="${invoiceTable.layoutX}" layoutY="${invoiceTable.layoutY + invoiceTable.height + containerVBox.height*0.06}" nodeOrientation="LEFT_TO_RIGHT" prefHeight="235.0" prefWidth="${invoiceMainPane.width*0.2}" style="-fx-border-color: ccc;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="232.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="46.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="previousBalanceTable" nodeOrientation="RIGHT_TO_LEFT" prefHeight="233.0" prefWidth="263.0" style="-fx-border-color: ccc;">
+                    <columns>
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="110.0" minWidth="110" style="-fx-rotate: 90;" text="%previous.balance" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+
+             <GridPane fx:id="invoiceBalanceGridPane" layoutX="${previousBalanceGridPane.layoutX + previousBalanceGridPane.width + 5}" layoutY="${invoiceTable.layoutY + invoiceTable.height + containerVBox.height*0.06}" nodeOrientation="LEFT_TO_RIGHT" prefHeight="235.0" prefWidth="${invoiceMainPane.width*0.2}" style="-fx-border-color: ccc;">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="232.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="46.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                 <children>
+                     <TableView fx:id="invoiceBalanceTable" nodeOrientation="RIGHT_TO_LEFT" prefHeight="233.0" prefWidth="263.0" style="-fx-border-color: ccc;">
+                         <columns>
+                         </columns>
+                     </TableView>
+                     <Label alignment="CENTER" prefHeight="36.0" prefWidth="110.0" minWidth="110" style="-fx-rotate: 90;" text="%regard.this.invoice" GridPane.columnIndex="1" />
+                 </children>
+             </GridPane>
+
+             <GridPane fx:id="finalBalanceGridPane" layoutX="${invoiceBalanceGridPane.layoutX + invoiceBalanceGridPane.width + 5}" layoutY="${invoiceTable.layoutY + invoiceTable.height + containerVBox.height*0.06}" nodeOrientation="LEFT_TO_RIGHT" prefHeight="235.0" prefWidth="${invoiceMainPane.width*0.2}" style="-fx-border-color: ccc;">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="232.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="46.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                 <children>
+                     <TableView fx:id="finalBalanceTable" nodeOrientation="RIGHT_TO_LEFT" prefHeight="233.0" prefWidth="263.0" style="-fx-border-color: ccc;">
+                         <columns>
+                         </columns>
+                     </TableView>
+                     <Label alignment="CENTER" prefHeight="36.0" prefWidth="110.0" minWidth="110" style="-fx-rotate: 90;" text="%final.balance" GridPane.columnIndex="1" />
+                 </children>
+             </GridPane>
+
+             <GridPane fx:id="totalBalanceGridPane" layoutX="${finalBalanceGridPane.layoutX + finalBalanceGridPane.width + 5}" layoutY="${invoiceTable.layoutY + invoiceTable.height + containerVBox.height*0.06}" nodeOrientation="LEFT_TO_RIGHT" prefHeight="235.0" prefWidth="${invoiceMainPane.width*0.25}" style="-fx-border-color: ccc;">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="312.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                 <children>
+                     <TableView fx:id="totalTradesTable" nodeOrientation="RIGHT_TO_LEFT" prefHeight="233.0" prefWidth="296.0" style="-fx-border-color: ccc;">
+                         <columns>
+                         </columns>
+                     </TableView>
+                     <Label alignment="CENTER" prefHeight="100.0" prefWidth="110.0" minWidth="110" style="-fx-rotate: 90;" text="%total.trades.mean" GridPane.columnIndex="1" />
+                 </children>
+             </GridPane>
+
+             <TableView fx:id="shortcutHelpTable" layoutX="3.0" layoutY="2.0" prefHeight="${invoiceMainPane.height}" prefWidth="127.0">
+              <columns>
+              </columns>
+            </TableView>
+
+         </children>
+      </Pane>
+      <Pane fx:id="buttonsParentPane" nodeOrientation="RIGHT_TO_LEFT" prefHeight="81.0" prefWidth="${containerVBox.width*0.75}">
+         <children>
+            <Pane fx:id="buttonsPane" layoutX="${(buttonsParentPane.width - buttonsPane.width)/2}" layoutY="6.0" prefHeight="40.0" prefWidth="${containerVBox.width*0.80}" style="-fx-border-color: ccc; -fx-border-radius: 5;">
+               <children>
+                  <GridPane layoutX="58.0" layoutY="15.0" prefHeight="10.0" prefWidth="1166.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="newInvoiceBtn" onAction="#newInvoiceBtnAction" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="%new.invoice" GridPane.columnIndex="4" />
+                        <Button fx:id="printInvoiceBtn" onAction="#printInvoiceBtnAction"  mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="%print.invoice" GridPane.columnIndex="2" />
+                        <Button fx:id="recordInvoiceBtn" onAction="#recordInvoiceBtnAction" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="%record.invoice" GridPane.columnIndex="1" />
+                        <Button fx:id="temporaryRecordInvoiceBtn" onAction="#temporaryRecordInvoiceBtnAction" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="%temporary.record.invoice" />
+                        <Button fx:id="removeInvoiceBtn" onAction="#removeInvoiceBtnAction" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="%remove.invoice" GridPane.columnIndex="3" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</VBox>

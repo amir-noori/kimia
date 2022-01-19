@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ToggleSwitch?>
+<VBox id="vbox" prefHeight="400" prefWidth="200"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ir.kimia.client.controller.UserManagementController">
+    <AnchorPane xmlns="http://javafx.com/javafx"
+
+                prefHeight="100.0" prefWidth="600.0">
+        <GridPane prefHeight="100.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <Label text="Date" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                </Label>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="Price" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                </Label>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <ToggleSwitch GridPane.columnIndex="0" GridPane.rowIndex="2" text="Hi"/>
+            </children>
+        </GridPane>
+    </AnchorPane>
+    <TableView editable="true"
+               prefHeight="430.0" prefWidth="500.0" tableMenuButtonVisible="true" />
+</VBox>
+
+

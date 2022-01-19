@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pre2post" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ffd1fd76-216f-42cb-a432-08098802a350">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ht1"/>
+	<parameter name="IMAGE_DIR" class="java.lang.String">
+		<defaultValueExpression><![CDATA["C:\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="XPath">
+		<![CDATA[/PrintDocumentInfoRequest]]>
+	</queryString>
+
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/Email]]></fieldDescription>
+	</field>
+	<field name="localMsisdn" class="java.lang.String">
+		<fieldDescription><![CDATA[SubscriberInfo/localMsisdn]]></fieldDescription>
+	</field>
+	<field name="fild20" class="java.lang.String">
+		<fieldDescription><![CDATA[PublicInfo/ExtArray3/fild20]]></fieldDescription>
+	</field>
+	<field name="FirstName" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/FirstName]]></fieldDescription>
+	</field>
+	<field name="FatherName" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/FatherName]]></fieldDescription>
+	</field>
+	<field name="LocalCertId" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/LocalCertId]]></fieldDescription>
+	</field>
+	<field name="CertAddr" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/CertAddr]]></fieldDescription>
+	</field>
+	<field name="Education" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/Education]]></fieldDescription>
+	</field>
+	<field name="Occupation" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/Occupation]]></fieldDescription>
+	</field>
+	<field name="HomeAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/HomeAddress]]></fieldDescription>
+	</field>
+	<field name="LocalPostCode" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/LocalPostCode]]></fieldDescription>
+	</field>
+	<field name="LocalContactPhone" class="java.lang.String">
+		<fieldDescription><![CDATA[CustomerInfo/LocalContactPhone]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="769" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<line>
+				<reportElement x="6" y="178" width="543" height="1" uuid="a78db338-c032-405e-8ac6-acb56b15d835">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="412" y="114" width="130" height="20" uuid="141093b8-693a-491e-9df9-288e11278ad0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[شماره سیمکارت
+]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="147" width="15" height="15" uuid="e45299f7-307c-4e50-968e-07ff605e2a29">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild1_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="35" y="147" width="15" height="15" uuid="c0af096b-6913-4dc7-ac24-7de8b298115e">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild2_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="147" width="15" height="15" uuid="d9d63a08-4488-48f5-b3ee-2b08adf6dfff">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild3_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="65" y="147" width="15" height="15" uuid="459fba10-8835-4b0b-98b6-7d71eb800ce5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild4_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="95" y="147" width="15" height="15" uuid="8ad8044c-e16e-44c2-bd9f-a1f7e54e7ce4">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild6_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="147" width="15" height="15" uuid="221493db-3d4c-4ade-84df-fe487debea3c">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild5_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="140" y="147" width="15" height="15" uuid="9523a88a-6a88-4e03-9e12-3264034ff66f">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild9_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="110" y="147" width="15" height="15" uuid="c6479802-1aaa-4e87-8945-3e826baaf0b8">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild7_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="125" y="147" width="15" height="15" uuid="d1c362fa-63d7-4ac8-89ca-8a1c2296cdbf">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild8_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="155" y="147" width="15" height="15" uuid="94f429ab-654f-45df-85de-fecef454a915">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild10_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="469" y="147" width="15" height="15" uuid="a3fab381-a9cd-41d5-9b84-60f0b1cabe86">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="424" y="147" width="15" height="15" uuid="edc3a757-ccc3-4367-a1ad-45e589c210a6">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="529" y="147" width="15" height="15" uuid="9c94023c-7b89-4492-8765-6238dc52e747">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild20}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="484" y="147" width="15" height="15" uuid="9be321f3-5028-4dba-b666-176a87049506">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="454" y="147" width="15" height="15" uuid="8c77b5e8-735b-4456-97c3-2004a4228ee7">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild15}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="394" y="147" width="15" height="15" uuid="3cd481c2-68ca-441d-9c33-3f7665448fd4">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="514" y="147" width="15" height="15" uuid="a27fbaf4-2b03-40a3-be83-cf69a715ac44">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild19}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="409" y="147" width="15" height="15" uuid="63013378-678b-4957-a17d-d099c285a5af">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="499" y="147" width="15" height="15" uuid="014dd888-0003-439c-aa27-1773de746975">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild18}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="439" y="147" width="15" height="15" uuid="f908025a-f65d-4849-a314-0f44912ebbe5">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="289" y="147" width="15" height="15" uuid="4e724f40-d08f-4585-89d5-18c7588a7f62">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="244" y="147" width="15" height="15" uuid="d97558f3-65f6-4b58-9d1f-60407a54aa3a">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="259" y="147" width="15" height="15" uuid="7face7f7-3ef7-40b7-895e-8413c1206188">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="349" y="147" width="15" height="15" uuid="f9afe389-6ad2-427c-9f75-305c8dca9c28">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="147" width="15" height="15" uuid="67b8dbc6-68b3-4b2e-b157-c3dbf53bf521">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="364" y="147" width="15" height="15" uuid="5d076207-42a4-40bb-a39d-fc011499471f">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="379" y="147" width="15" height="15" uuid="f0845fbe-a96b-46e6-8409-7472281c1f5d">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="334" y="147" width="15" height="15" uuid="dbfc657a-332a-4c22-afef-9508cf0dfd75">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="304" y="147" width="15" height="15" uuid="7c301f03-ede9-4cc2-80a1-301bee389628">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="274" y="147" width="15" height="15" uuid="d6179f01-6153-4999-9606-540686c4731e">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fild3}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="4" y="291" width="545" height="1" uuid="0672a1ea-3be7-48f1-aed4-4566d7fe65e3">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="479" y="339" width="62" height="13" uuid="95164b83-531d-4dec-bab3-b422405d468c">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[شرایط و ضوابط :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="42" width="150" height="23" uuid="86ffac88-7304-4212-ab95-db877ed41f06">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LocalIssueDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="323" y="193" width="186" height="14" uuid="5653b387-e2e3-4206-9a21-ee6775d69522">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirstLastName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="388" y="213" width="128" height="14" uuid="3d577bf7-37a3-40c5-9b84-a32e7eb5857b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FatherName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="270" y="213" width="84" height="14" uuid="13813196-4c16-40e9-9e56-8fb19dec81d9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LocalCertId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="125" y="213" width="111" height="14" uuid="5baf9af3-f1c1-4fa0-8791-193eadb91d0d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CertAddr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="13" y="215" width="87" height="14" uuid="51c3ddb9-68ef-4acf-8421-ae129d4deb23"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LocalBirthday}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="380" y="232" width="128" height="14" uuid="af85ce49-dd50-41fc-a496-7e15dc901ccf"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Education}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="265" y="232" width="96" height="14" uuid="2523edcf-6a2f-4d48-8812-fc579f667368"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Occupation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="87" y="232" width="120" height="14" uuid="72b2b58c-15df-476c-8026-90e1ab4ba4ce">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NoOtherOperater}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="182" y="251" width="306" height="14" uuid="e4a0604f-5550-4b68-bebd-a0e619bd3446">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{HomeAddress}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="33" y="250" width="114" height="14" uuid="257e8ad3-76bf-4d5d-9beb-8015a84d98de">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LocalPostCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="388" y="271" width="108" height="14" uuid="68491e49-282d-4284-b89c-793ec23a71ab">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LocalContactPhone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="269" width="185" height="14" uuid="acd565a4-28f4-4384-8296-08973887f49a">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+				<patternExpression><![CDATA[$F{Email}]]></patternExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="408" y="301" width="111" height="14" uuid="c935ff18-9da2-4495-b168-4bd4c0ad8539">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirstLastName}]]></textFieldExpression>
+				<patternExpression><![CDATA[$F{Email}]]></patternExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="218" y="301" width="104" height="14" uuid="b3f40f93-ff7f-4a77-8a8f-c7860928bbd3">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{localMsisdn}]]></textFieldExpression>
+				<patternExpression><![CDATA[$F{Email}]]></patternExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="27" width="46" height="16" uuid="f62b60e0-ea82-40b5-badd-bfe4aac128b9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[شماره : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="46" width="36" height="17" uuid="57ee2de1-3a67-4f61-a15b-4aa464342dcb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[تاریخ: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="68" width="36" height="12" uuid="f8d884c4-aec9-42a0-8483-b0839ca471cb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[پیوست: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="114" width="131" height="20" uuid="54844bd9-bcf1-4874-8c14-85744dd1677a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[شماره تلفن
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="176" width="72" height="20" uuid="b81549ee-bbbb-4836-b4bc-ba322d31235c">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[مشخصات متقاضی : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="198" width="34" height="14" uuid="dea7060a-b2f6-4681-964a-516b11bda05e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[خانم / آقای : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="216" width="34" height="14" uuid="8bde2e6e-8428-4e40-8266-1092ba84f8e6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[نام پدر : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="216" width="26" height="14" uuid="3eba56ff-f20d-451a-8a7c-e6ebefad1819"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[کد ملی : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="216" width="34" height="14" uuid="a7892ac6-e47e-42f5-8a4c-3b36507072ea"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[محل صدور : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="216" width="36" height="14" uuid="71b024d6-8672-4781-adac-fa29f074659a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[تاریخ تولد : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="235" width="34" height="14" uuid="963f5385-65ea-473e-a5fb-c951b2f94e1b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[تحصیلات : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="235" width="24" height="14" uuid="d1ea3a45-626f-4e8e-bdd4-253c000c0d14"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[شغل : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="235" width="60" height="14" uuid="8444e918-fc0a-4e79-b410-16628125fe54"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[شماره سایر اپراتور ها : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="253" width="56" height="14" uuid="6efc1686-a41d-4ffa-82d5-b6f7a3fb83d5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[آدرس محل سکونت : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="253" width="56" height="14" uuid="dd6a09a9-9ce3-4c06-a58f-acdf71717a3b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[کد پستی  : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="271" width="52" height="14" uuid="90d972fc-5b56-4685-a837-6273804094cf"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[شماره تلفن ثابت : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="271" width="118" height="14" uuid="481d2986-9d8f-41e0-b546-7f4b71a86cde"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[آدرس ایمیل برای دریافت خدمات الکترونیکی : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="521" y="304" width="20" height="14" uuid="adf3d025-50df-4e9f-9638-421382e5a877"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[اینجانب ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="304" width="86" height="14" uuid="8cdee908-5ac6-45ab-a3e4-5fb4d0e419ce"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[به عنوان مشترک تلفن همراه شماره]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="304" width="198" height="14" uuid="d20230a1-d76f-4b72-869e-d3dd5b1380c0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[تمـامی شـرایط و ضوابط تبدیـل شمـاره تلفـن همراه دایمـی به تلفـن همـراه اعتبـاری  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="317" width="183" height="14" uuid="e993f4e6-0e28-4dce-b935-6a91976d588d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8"/>
+				</textElement>
+				<text><![CDATA[مندرج در ذیل را مطالعه نموده و خود را ملزم به رعایت شروط و تعهدات می نمایم.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="432" y="15" width="72" height="53" uuid="6c1e0a0a-6e73-4338-8f41-77f43e3ca6a8"/>
+				<imageExpression><![CDATA[$P{IMAGE_DIR} +"Anarestan.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="392" y="66" width="147" height="20" uuid="8dd6bcaa-b22f-461b-a277-f79355165695"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[شرکت ارتباطات سیار ایران (سهامی عام)
+شناسه ملی : ۱۰۱۰۳۵۶۰۴۵۳ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="631" width="62" height="14" uuid="60078185-c922-48ed-bdef-24e9cbe0af57"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[نام و نام خانوادگی : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="649" width="110" height="14" uuid="2bb6907f-202a-4c94-ac1e-a7248eec896c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[امضا و اثر انگشت متقاضی / وکیل قانونی]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="626" width="100" height="53" uuid="fc3fd06e-67f9-4b6d-bc8e-cdb3f1cd4486"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="631" width="120" height="14" uuid="8a30553c-e7aa-4bf2-ba14-fbd3a16e5cb3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[محل مهر و امضا واحد اجرایی تنظیم کننده :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="665" width="70" height="14" uuid="7f7b47ed-e9ed-4915-afd0-5f7716ff14f0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[اسکن مدارک انجام شد]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="626" width="100" height="53" uuid="fd07a349-a17b-480c-9158-cc7d09cebb22"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="178" y="672" width="14" height="14" uuid="4c0a6bf1-f9fd-46d3-ab84-be03c3378433"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="76" y="717" width="76" height="21" uuid="49da8815-aa48-4edd-9f6d-33b4758c0041">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11"/>
+				</textElement>
+				<text><![CDATA[- شماره ثبت:۳۱۷۵۱۲]]></text>
+			</staticText>
+			<line>
+				<reportElement x="548" y="13" width="1" height="700" uuid="afad6e78-8629-4e06-8aa2-98182b286b91">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4" y="714" width="545" height="1" uuid="028f2600-4d41-4644-867c-7bece428d966"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="5" y="12" width="1" height="700" uuid="8482e5fb-5a04-4be9-90f0-af0745037971">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="5" y="12" width="544" height="1" uuid="70676d2d-4d0b-4d74-b647-0c6cfa961ad3"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="6" y="104" width="543" height="1" uuid="14e0b804-4757-4901-b8ae-0afce176fe55"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="380" y="13" width="1" height="90" uuid="318c9ce1-e369-4c4e-bfa1-a64e31b844ce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="150" y="13" width="1" height="90" uuid="0d20417e-756c-4871-ab11-8c13fd46d17d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="7" y="739" width="540" height="15" uuid="f7ec79ff-2785-4090-a956-a26ee16e32c0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<text><![CDATA[90Vanak St, Hamrah Tower, Kordestan Hwy, Kavusiyeh,Tehran - Iran,(ZIPCode: 1991954168)- National Code:10103560453-Registry No: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="85" width="60" height="20" uuid="3743c104-15ca-412a-865e-4b32e0826f08"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="12"/>
+				</textElement>
+				<text><![CDATA[شنـاسـه مـلی: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="84" width="70" height="19" uuid="7b492cb6-b53f-4732-9695-1130f56ee7be"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[10103560453]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="357" width="492" height="10" uuid="8cc34338-e49c-4d7d-9690-fee306b08b30">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[. تبدیـل شماره تلفـن همراه از دایـمی به اعتبـاری صرفا برای مشترک ترابرد شده اعتبـاری از سایر اپراتـورها که قصد تـرابرد مجدد از شبکه همراه اول را دارند امکانـپذیر می باشد و در سایـر مـوارد، ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="390" width="531" height="10" isRemoveLineWhenBlank="true" uuid="ed62f389-32b0-42a3-8501-30247d2d0c14"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[. در صورتی که مشترک اقدام به تقاضـا برای دریافت سرویس تـبدیل شماره همراه دایمی به اعتباری نمایـد، هـزینه‌های دریافـتی بابت تبدیل شـماره تلفن همراه اعتـباری به دایمی غـیر قابل بازگـشـت می‌باشند. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="402" width="431" height="10" uuid="c9abc8da-ffc8-47cc-a2bb-4c742f8a2ff2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[همچنین در صورت تبدیـل شماره تلفن همراه این گونه مشترکین از دایمـی به اعتباری، کلیه بسته‏ ها و طرح‏ های تـشویقی حتی در صورت داشـتن حجم و مهلـت استفـاده]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="424" width="531" height="10" uuid="501fbf61-0b33-4d7f-abad-5ffe09a34c8b"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[. فقط شخصی که حق ‏الامتیاز تلفن همراه در سیستم اطلاعات مشترکین به نام او ثبـت شده است (مشترک تلفن همـراه) اجازه تبدیل شماره تلفـن همراه از دایمی به اعتباری را دارد. در صورتی که شخـصی غیر از ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="449" width="531" height="10" uuid="f4e363d4-085b-461b-92d5-65bb3f0a62dc"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[سیار ایران، مراجع قانونی و به ویژه مشترک تلفن همراه راسا مسئول و پاسخگو بوده و می‏بایست خسارات وارده به مشترک و شرکت ارتباطات سیار ایران را جبران نماید. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="474" width="358" height="10" uuid="33f52c17-19ce-4b72-9fcc-efd02ac1b4f4"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[. با توجه به اینکه پس از طـی فرایند تبدیل، مشترک تلفـن همراه دایمی به مشتـرک تلفـن همراه اعتباری تبدیل می‏ گردد، لذا کلیه مفـاد ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="310" y="369" width="229" height="10" uuid="46e82a74-6c60-4321-9822-cb715e7a3424">
+					<property name="com.jaspersoft.studio.unit.tabStopWidth" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.25" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9" isBold="true" isItalic="false" isUnderline="false"/>
+					<paragraph tabStopWidth="0"/>
+				</textElement>
+				<text><![CDATA[مجدد شماره تلفن همراه دایمی شده به اعتباری به هیچ وجه وجود ندارد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="436" width="531" height="10" uuid="df6a351c-e0ba-41c1-96d6-d1e0435cfd42"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[مشترک نسبت به تبـدیل شماره تلفـن همراه دایمی به اعتباری اقدام نماید، ضمن داشتن مسئولیت حقوقـی و کیفری در خصوص تلفن همراهی که به طور غیرمجاز تبدیل وضعیت شده، در مـقابـل شرکت ارتباطـات ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="488" width="531" height="10" uuid="a02beb08-8bc2-40d3-9c88-5a7c5e641b71"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[مشترک حاکم خواهـد بود. مشترک مکلف است قبـل از امضـای این فرم نسبت به مطالعه کامل و دقیق مفاد قـرارداد اشتراک فـوق در سایت همراه اول اقدام نمـاید و امضای این فـرم به منزله پذیـرش مفاد قرارداد ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="501" width="87" height="10" uuid="f2c524d0-2429-4832-9fd1-8e389acdf529"/>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[مزبور و اصلاحات بعدی آن است.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="472" width="184" height="12" uuid="8d18175f-d726-4ba3-b363-7bad98f39d31">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[قـرارداد اشتراك تـلفـن‏ هـای همـراه اعتبـاری]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="473" width="72" height="11" uuid="7db2a466-7462-48d1-aec6-55eb38926f8c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="9"/>
+				</textElement>
+				<text><![CDATA[بر روابط ما بین شرکت و]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="14" y="357" width="44" height="11" uuid="6bba7d20-a3c9-475a-a0aa-2ccbf2f8121c"/>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="B Mitra" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[امکان تبدیل ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="401" width="50" height="10" uuid="76bc46ea-f42d-43c3-b985-0b2f6bfca95b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="B Mitra" size="9" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ غیرفعال می‏ گردد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="28" width="208" height="21" uuid="3bda1e51-6294-4c1b-8810-e5e8fbc6c057"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[فرم تبدیل شماره تلفن همراه از دایمی به اعتباری]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="74" width="39" height="21" uuid="d0d39a50-09b9-4ed7-b39a-bbaa796d9588"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[کد فرم: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="76" width="90" height="20" uuid="6237519a-53a3-46b9-a028-449d3526babe"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FO-CMO-203/00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="54" width="220" height="13" uuid="c0a7b0de-c9f7-4932-8454-0e3b4dbe3c47">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="2  Nazanin" size="8"/>
+				</textElement>
+				<text><![CDATA[(ویژه مشترک ترابرد شده از سایر اپراتورها که قصد ترابرد مجدد از شبکه همراه اول را دارد)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="537" y="353" width="6" height="14" uuid="b6749ec3-723e-4b86-8a45-f655d86b680d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="537" y="386" width="6" height="14" uuid="6891da9d-bd90-4784-b00c-2d1f66ba7f6a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="537" y="420" width="6" height="14" uuid="5c165899-7a1b-4e28-b922-59cdf532356a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="537" y="470" width="6" height="14" uuid="6b7999ac-353d-4236-a840-c26c3ec47086">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="716" width="168" height="21" uuid="fa90fb60-15e4-45f2-a300-6d131b9086cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11"/>
+				</textElement>
+				<text><![CDATA[تهران، کاووسیه، بزرگراه کردستان، خیابان ونک، پلاک
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="715" width="18" height="21" uuid="aee61917-f26b-4b15-9d91-bf3de2e739a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[90]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="716" width="70" height="21" uuid="f62db126-2fc7-4b13-b986-1ab8f3dc4e8f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Mitra" size="11"/>
+				</textElement>
+				<text><![CDATA[، برج همراه، کد پستی: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="715" width="70" height="21" uuid="ee28185d-ba31-4c39-80d1-c0fac7f06c75">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[1991954168]]></text>
+			</staticText>
+			<line>
+				<reportElement x="364" y="379" width="175" height="1" forecolor="#5C5959" uuid="a87af508-3419-45ba-ab3f-9877f1d6715e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#050505"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="22" y="367" width="30" height="1" forecolor="#857E7E" uuid="162b6e0e-c949-449c-b2d3-de1cb866841c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="72" y="410" width="45" height="1" forecolor="#706F6F" uuid="4327020c-bb44-476d-a178-6c9b68a5f62f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="234" y="754" width="86" height="15" uuid="9b58bf14-a574-4a6c-b554-d6a1b770173a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<text><![CDATA[317512]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'B Titr Bold';
+    src: url('/font/B_Titr_Bold.ttf');
+}
+
+DialogPane {
+    -fx-font-family: 'B Titr Bold' !important;
+    -fx-font-size: 15;
+}
+
+VBox {
+    -fx-font-family: 'B Titr Bold' !important;
+    -fx-font-size: 15;
+}
+
+.combo-box > .list-cell {
+    -fx-alignment: center;
+}
+
+.combo-box.center-aligned > .list-cell {
+    -fx-alignment: center;
+}
+
+.app-combo-box > .list-cell {
+    -fx-alignment: center;
+}
+
+.app-combo-box.center-aligned > .list-cell {
+    -fx-alignment: center;
+}
+
+.credit-column {
+    -fx-text-fill: green;
+}
+
+.debit-column {
+    -fx-text-fill: red;
+}
